@@ -6,7 +6,7 @@
 /*   By: sechavez <sechavez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 12:28:55 by sechavez          #+#    #+#             */
-/*   Updated: 2025/11/19 13:43:55 by sechavez         ###   ########.fr       */
+/*   Updated: 2025/11/20 12:30:56 by sechavez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_matoi(int i, int s, long long n, const char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		digi = str[i] - '0';
-		if ((s == 1) && ((n > appr_max ) || (digi > 7 && n == appr_max)))
+		if ((s == 1) && ((n > appr_max) || (digi > 7 && n == appr_max)))
 			return (-1);
 		else if ((s == -1) && ((n > appr_max) || (digi > 8 && n == appr_max)))
 			return (0);

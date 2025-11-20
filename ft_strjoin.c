@@ -6,7 +6,7 @@
 /*   By: sechavez <sechavez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 15:02:20 by sechavez          #+#    #+#             */
-/*   Updated: 2025/11/18 19:10:59 by sechavez         ###   ########.fr       */
+/*   Updated: 2025/11/20 12:03:10 by sechavez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (!s1 || !s2)
 		return (0);
-	s3 = malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char));
+	s3 = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!s3)
 		return (0);
 	i = 0;
